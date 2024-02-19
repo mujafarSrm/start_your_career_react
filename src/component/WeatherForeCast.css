@@ -1,0 +1,33 @@
+.WFC {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.WFC-div {
+  border: 2px solid #000000;
+  margin: 2vh;
+  padding: 2vh;
+  text-align: left;
+  background-color: rgb(232, 187, 127);
+  border-radius: 2vh;
+  height: 22vh;
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); */
+  
+}
+
+.WFC-div:hover {
+    /* background-color: rgb(255, 145, 0); */
+    background-color: rgb(237, 237, 181);
+}
+
+ul div p {
+  margin: 5px 0;
+}

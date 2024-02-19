@@ -1,0 +1,64 @@
+form {
+  text-align: initial;
+}
+
+
+
+.job-application-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
+  padding: 2vh 6vh;
+  border: 0.6vh solid #1a1818;
+  box-shadow: 0 5px 10px rgba(249, 19, 19, 0.2);
+  z-index: 1000;
+  width: 30%;
+  height: 70%;
+  overflow: scroll;
+}
+
+.job-application-modal h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.job-application-modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-application-modal label {
+  margin-bottom: 10px;
+}
+
+.job-application-modal input,
+.job-application-modal textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.job-application-modal button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.job-application-modal button:last-child {
+  background-color: #f44336;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 20px; */
+  flex-direction: row-reverse;
+}

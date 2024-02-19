@@ -1,0 +1,299 @@
+.job-post {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.form-background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(71 59 59 / 50%);
+}
+
+.job-post-li {
+  flex: 0 0 30%; /* Each item takes up 30% of the container width */
+  height: 290px; /* Set a fixed height */
+  width: 100%; /* Set a fixed width */
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left;
+  border-radius: 3vh;
+  background: linen;
+  border-left: 6px rgb(89, 82, 224) solid;
+  border-right: 6px rgb(143, 139, 220) solid;
+  overflow: hidden;
+}
+
+.job-post-li:hover {
+  box-shadow: 4px 4px black;
+  border-right: none;
+  border-left: 6px red solid;
+  border-radius: 3vh;
+  background: rgb(244, 226, 207);
+  overflow: auto;
+}
+
+.apply-button {
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.apply {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* button {
+  padding: 1vh 3vh;
+  background: green;
+  border: 2px solid;
+  color: white;
+  border-radius: 2vh;
+}
+
+.applied {
+  background: grey;
+  cursor: not-allowed;
+} */
+
+button {
+    padding: 1vh 3vh;
+    background: #006980;
+    border: 2px solid;
+    color: white;
+    border-radius: 2vh;
+    cursor: pointer; 
+    padding: 2vh 3vh;
+    margin-top: 1vh;
+    box-shadow: 5px 5px 5px black;
+  }
+  
+  button.applied {
+    background: rgb(92, 83, 83);
+    cursor: not-allowed;
+  }
+  
+
+.add-new-job {
+  background-color: #d1dfef;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  color: black;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-new-job h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.add-new-job-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.add-new-job-content div {
+  margin-bottom: 20px;
+}
+
+.add-new-job-content label {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.add-new-job-content input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.add-new-job-content input:focus {
+  border-color: #007bff;
+}
+
+.add-new-job-content button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-new-job-content button:hover {
+  background-color: #0056b3;
+}
+
+.add-job-button {
+  padding: 2vh 13vh;
+  font-size: 3vh;
+}
+
+.job-header{
+  text-align: initial;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20%;
+}
+
+.job-header input{
+  height: 4vh;
+  width: 52vh;
+  border: 2px solid black;
+  border-radius: 3vh 0  0 3vh ;
+  font-size: large;
+  padding: 2vh;
+}
+
+.job-header input:focus{
+  height: 4vh;
+  width: 66vh;
+  border: 2px solid blue;
+  border-radius: 3vh 0  0 3vh;
+  padding: 2vh;
+}
+
+.job-header .search-button{
+  height: 8.7vh;
+  width: 15vh;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 0 3vh 3vh 0;
+  font-size: large;
+  padding: 2vh;
+}
+
+button.apply-button.delete {
+  background-color: red;
+}
+button.apply-button.edit {
+  background-color: rgb(9, 79, 8);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #e6f7ff;
+}
+
+.tr-header {
+  background-color: #a0c9f6;
+}
+
+.tr-content {
+  margin: 8vh;
+}
+
+/* .edit-job-content {
+  text-align: initial;
+  display: flex;
+  gap: 1vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0% 35%;
+  border: 2px solid black;
+  border-radius: 2vh;
+}
+
+.edit-job-label {
+  display: flex;
+} */
+
+
+
+.edit-job-content textarea{
+  width: 50vh;
+  height: 26vh;
+  border-radius: 1vh;
+}
+
+.edit-job-input input{
+  width: 50vh;
+  height: 4vh;
+  border-radius: 1vh;
+}
+
+h2.edit-job-heading {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  border-left: 6px red solid;
+  padding: 0;
+  margin: 2vh 15vh;
+}
+
+.edit-pop-up-buttons{
+  display: flex;
+  justify-content: space-between;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-job-content {
+  text-align: initial;
+  display: flex;
+  gap: 2vh;
+  flex-direction: column;
+  margin: 5vh auto;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 2vh;
+  background: #f4f2f2; 
+  z-index: 1000; 
+}
+
+.edit-job-label {
+  display: flex;
+}
+
+.editing-overlay {
+  display: flex;
+}
